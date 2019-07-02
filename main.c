@@ -1,15 +1,22 @@
 #include <stdio.h>
 
-
+/**
+ * Eingabe gibt dem Nutzer die Moeglichkeit, eine Zahl einzugeben
+ * @return Eingegebene Zahl
+ */
 int eingabe(){
     int tmp = 0;
     while(!scanf("%d", &tmp)){
-        printf("Gib eine positive ganzzahl ein: ");
+        printf("Gib eine positive Ganzzahl ein: ");
         getchar();
     }
     return tmp;
 }
 
+/**
+ * Berechnet iterativ die ersten n Fibonacci-Zahlen
+ * @return /
+ */
 int main() {
     int durchlauf = 0;
     int fibo1 = 0;
